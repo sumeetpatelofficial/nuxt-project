@@ -45,10 +45,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_variable.scss";
 .product-cart {
   position: relative;
   background: #ffffff;
   transition: all ease-in-out 0.2s;
+  border-radius: 10px;
   &:hover {
     background: #f8f9fa;
     box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 15%);

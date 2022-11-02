@@ -8,7 +8,8 @@
 <script>
     export default {
         async asyncData ({ params, $axios }) {
-            const { data } = await $axios.$get(`/products/${params.id}`)
+            console.log({params})
+            const data = await $axios.$get(`/products/${params.slug}`)
             console.log('data',data)
             const product = data
             return { product }
@@ -19,7 +20,6 @@
             }            
         },
         created(){
-            console.log('route',this.$route)
         }
     }
 </script>

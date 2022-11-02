@@ -1,6 +1,6 @@
 <template>
   <div class="position-relative">
-    <b-navbar type="light" variant="light" sticky>
+    <b-navbar type="light" variant="white" sticky>
       <div class="container">
         <b-navbar-nav>
           <b-nav-item href="#">

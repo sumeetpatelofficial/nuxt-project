@@ -1,8 +1,9 @@
 <template>
   <div>
     <Header />
-    <product />
-    <product-detail />
+    <Nuxt />
+    <!-- <product />
+    <product-detail /> -->
   </div>
 </template>
 
@@ -11,6 +12,6 @@ import product from './product.vue'
 import productDetail from './product-detail/_slug.vue'
 export default {
   components: { product, productDetail },
-  name: 'IndexPage'
+  name: 'Home'
 }
 </script>

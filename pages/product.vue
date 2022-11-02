@@ -1,7 +1,7 @@
 <template>
   <div class="container py-5">
     <div class="row d-flex">
-      <div class="col-md-3 mb-4" v-for="(product, p) in productList" :key="p">
+      <div class="col-md-3 mb-4 product-list" v-for="(product, p) in productList" :key="p">
         <nuxt-link class="text-decoration-none" :to="`/product-detail/${product.id}`">
           <product-single :product="product" />
         </nuxt-link>
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     ...mapState({
-      productList: (state) => state.products,
+      productList: (state) => state.products      
     }),
   },  
   async fetch() {
@@ -30,4 +30,12 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .product-list{
+    position: relative;
+    a{
+      position: relative;
+      color:black;
+    }
+  }
+</style>
